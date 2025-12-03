@@ -12,7 +12,7 @@ const QRScanner: React.FC<QRScannerProps> = ({ onScan, onClose }) => {
   // @ts-ignore - Html5Qrcode type not available
   const scannerRef = useRef<any>(null);
   const isRunningRef = useRef<boolean>(false);
-  const [isScanning, setIsScanning] = useState(false);
+  // Removed unused isScanning state
   const [error, setError] = useState<string>('');
   const [validationStatus, setValidationStatus] = useState<'idle' | 'validating' | 'valid' | 'invalid'>('idle');
   const [lastScannedCode, setLastScannedCode] = useState<string>('');

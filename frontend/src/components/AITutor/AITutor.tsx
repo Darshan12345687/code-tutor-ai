@@ -1,7 +1,6 @@
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useState } from 'react';
 import axios from 'axios';
 import VoiceAssistant from '../Voice/VoiceAssistant';
-import LanguageSelector from '../LanguageSelector';
 import MarkdownMessage from '../MarkdownMessage';
 import { ExplanationResult } from '../../App';
 import { getApiUrl, API_ENDPOINTS } from '../../utils/apiConfig';
@@ -36,13 +35,6 @@ const AITutor: React.FC<AITutorProps> = ({ user, onLanguageChange }) => {
   // const scrollToBottom = () => {
   //   messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
   // };
-
-  const handleLanguageChange = (language: string) => {
-    setSelectedLanguage(language);
-    if (onLanguageChange) {
-      onLanguageChange(language);
-    }
-  };
 
   const sendMessage = async () => {
     if (!inputMessage.trim() || isLoading) return;
@@ -80,7 +72,6 @@ const AITutor: React.FC<AITutorProps> = ({ user, onLanguageChange }) => {
       );
 
       // Check if this is a refusal (non-programming question)
-      const isRefusal = response.data.isRefusal || false;
       const answerText = response.data.explanation || response.data.answer || 'I can only help with programming and software-development topics. Please ask me something related to coding or computer science!';
       
       const assistantMessage: Message = {
@@ -129,22 +120,6 @@ const AITutor: React.FC<AITutorProps> = ({ user, onLanguageChange }) => {
       e.preventDefault();
       sendMessage();
     }
-  };
-
-  const quickQuestions = [
-    'What is a variable?',
-    'Explain loops in programming',
-    'What is object-oriented programming?',
-    'How do I debug errors?',
-    'Explain recursion',
-    'What are data structures?',
-  ];
-
-  const handleQuickQuestion = (question: string) => {
-    setInputMessage(question);
-    setTimeout(() => {
-      sendMessage();
-    }, 100);
   };
 
   return (

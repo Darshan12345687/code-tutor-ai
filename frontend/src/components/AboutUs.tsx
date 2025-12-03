@@ -1,5 +1,4 @@
 import React from 'react';
-import SEMOLogo from './SEMOLogo';
 import './AboutUs.css';
 
 const AboutUs: React.FC = () => {

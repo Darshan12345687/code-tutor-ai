@@ -23,21 +23,9 @@ interface Flashcard {
   tags: string[];
 }
 
-interface QuizProgress {
-  _id: string;
-  score: number;
-  totalPoints: number;
-  percentage: number;
-  completedAt: string;
-  quiz: Quiz;
-}
+// Removed unused QuizProgress interface
 
-interface FlashcardProgress {
-  _id: string;
-  flashcard: Flashcard;
-  easeFactor: number;
-  interval: number;
-  repetitions: number;
+// Removed unused FlashcardProgress interface
   nextReview: string;
   isMastered: boolean;
   timesReviewed: number;

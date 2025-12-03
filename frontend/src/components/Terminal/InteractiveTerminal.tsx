@@ -28,7 +28,7 @@ const InteractiveTerminal = forwardRef<TerminalRef, TerminalProps>(({ language, 
   const [pendingCode, setPendingCode] = useState<string | null>(null);
   const [lastExecution, setLastExecution] = useState<{ code: string; output: string; error: string | null } | null>(null);
   const [isLoadingAI, setIsLoadingAI] = useState(false);
-  const [aiFeedback, setAiFeedback] = useState<string | null>(null);
+  // Removed unused aiFeedback state
   const terminalRef = useRef<HTMLDivElement>(null);
   const textareaRef = useRef<HTMLTextAreaElement>(null);
   const inputRefs = useRef<Array<HTMLInputElement | null>>([]);

@@ -1,11 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import './LinkedListVisualizer.css';
 
-interface Node {
-  value: number;
-  next: Node | null;
-}
-
 const LinkedListVisualizer: React.FC = () => {
   const [list, setList] = useState<number[]>([]);
   const [inputValue, setInputValue] = useState('');

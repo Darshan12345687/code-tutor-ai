@@ -112,7 +112,7 @@ const TreeVisualizer: React.FC = () => {
       if (!node) return;
 
       const radius = 25;
-      const spacing = 150 / level;
+      // Removed unused spacing variable
 
       // Draw connections
       if (node.left) {

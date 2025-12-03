@@ -29,7 +29,8 @@ const MarkdownMessage: React.FC<MarkdownMessageProps> = ({ content, language = '
                 <button 
                   className="copy-code-btn"
                   onClick={() => {
-                    navigator.clipboard.writeText(codeBlockContent.join('\n'));
+                    const content = codeBlockContent.join('\n');
+                    navigator.clipboard.writeText(content);
                   }}
                   title="Copy code"
                 >
@@ -250,7 +251,6 @@ const MarkdownMessage: React.FC<MarkdownMessageProps> = ({ content, language = '
 
   const parseInlineMarkdown = (text: string): (string | JSX.Element)[] => {
     const parts: (string | JSX.Element)[] = [];
-    let currentIndex = 0;
 
     // Handle bold text **text**
     const boldRegex = /\*\*(.+?)\*\*/g;
