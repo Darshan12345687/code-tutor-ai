@@ -142,7 +142,6 @@ const QRScanner: React.FC<QRScannerProps> = ({ onScan, onClose }) => {
             if (isRunningRef.current) {
               html5QrCode.stop().then(() => {
                 isRunningRef.current = false;
-                setIsScanning(false);
                 // Reset lastScannedCode after a delay to allow new scans
                 setTimeout(() => {
                   setLastScannedCode('');
@@ -153,7 +152,6 @@ const QRScanner: React.FC<QRScannerProps> = ({ onScan, onClose }) => {
               }).catch((err: any) => {
                 console.log('Stop error (ignored):', err);
                 isRunningRef.current = false;
-                setIsScanning(false);
                 setTimeout(() => {
                   setLastScannedCode('');
                   lastScanTimeRef.current = 0;
@@ -162,7 +160,6 @@ const QRScanner: React.FC<QRScannerProps> = ({ onScan, onClose }) => {
                 onScan(s0Key);
               });
             } else {
-              setIsScanning(false);
               setTimeout(() => {
                 setLastScannedCode('');
                 lastScanTimeRef.current = 0;
@@ -181,13 +178,11 @@ const QRScanner: React.FC<QRScannerProps> = ({ onScan, onClose }) => {
         );
 
         isRunningRef.current = true;
-        setIsScanning(true);
         setError('');
         setValidationStatus('idle');
       } catch (err: any) {
         console.error('❌ Scanner error:', err);
         setError(err.message || 'Failed to start camera. Please check permissions and try again.');
-        setIsScanning(false);
         setValidationStatus('idle');
       }
     };
@@ -214,7 +209,6 @@ const QRScanner: React.FC<QRScannerProps> = ({ onScan, onClose }) => {
         isRunningRef.current = false;
       }
     }
-    setIsScanning(false);
     setError('');
     onClose();
   };

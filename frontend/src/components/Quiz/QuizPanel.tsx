@@ -26,11 +26,6 @@ interface Flashcard {
 // Removed unused QuizProgress interface
 
 // Removed unused FlashcardProgress interface
-  nextReview: string;
-  isMastered: boolean;
-  timesReviewed: number;
-  timesCorrect: number;
-}
 
 const QuizPanel: React.FC = () => {
   const [activeMode, setActiveMode] = useState<'quizzes' | 'flashcards'>('quizzes');

@@ -176,9 +176,6 @@ const InteractiveTerminal = forwardRef<TerminalRef, TerminalProps>(({ language, 
         output: output || '',
         error: error || null
       });
-      
-      // Clear previous AI feedback when new code is executed
-      setAiFeedback(null);
 
       if (error) {
         // Log the error for debugging
@@ -239,9 +236,6 @@ const InteractiveTerminal = forwardRef<TerminalRef, TerminalProps>(({ language, 
         error: errorMessage
       });
       
-      // Clear previous AI feedback when new code is executed
-      setAiFeedback(null);
-      
       setHistory(prev => [...prev, {
         type: 'error',
         content: `❌ ${errorMessage}`,
@@ -299,7 +293,6 @@ const InteractiveTerminal = forwardRef<TerminalRef, TerminalProps>(({ language, 
     }
 
     setIsLoadingAI(true);
-    setAiFeedback(null);
 
     try {
       const token = localStorage.getItem('token');
@@ -345,7 +338,6 @@ const InteractiveTerminal = forwardRef<TerminalRef, TerminalProps>(({ language, 
 
       // Handle response from code-feedback endpoint
       const feedback = response.data.feedback || 'No feedback available.';
-      setAiFeedback(feedback);
       
       // Add AI feedback to history with better formatting
       let feedbackTitle = '';
