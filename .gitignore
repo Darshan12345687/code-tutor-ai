@@ -50,6 +50,7 @@ frontend.log
 # Backend specific
 backend/.env
 backend/.env.*
+!backend/.env.example  # Allow .env.example (template file)
 backend/*.key
 backend/*.pem
 backend/secrets/
