@@ -1,0 +1,54 @@
+{
+  "name": "codetutor-backend",
+  "version": "1.0.0",
+  "description": "Code Tutor AI Backend API",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js",
+    "validate-keys": "node scripts/validate-api-keys.js",
+    "setup-keys": "node scripts/setup-api-keys.js",
+    "merge-datasets": "node scripts/merge-datasets.js",
+    "prepare-dataset": "node scripts/prepare-finetuning-dataset.js",
+    "finetune": "node scripts/finetune-openai.js",
+    "setup-gemini-fewshot": "node scripts/setup-gemini-fewshot.js",
+    "setup-huggingface": "node scripts/finetune-huggingface.js",
+    "test-responses": "node scripts/test-beginner-responses.js",
+    "add-examples": "node scripts/add-examples.js",
+    "seed-quizzes": "node scripts/seed-quizzes-flashcards.js"
+  },
+  "keywords": [
+    "codetutor",
+    "api",
+    "express",
+    "mongodb"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@google/generative-ai": "^0.2.1",
+    "@mistralai/mistralai": "^1.0.0",
+    "axios": "^1.6.2",
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dockerode": "^4.0.0",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "express-mongo-sanitize": "^2.2.0",
+    "express-rate-limit": "^7.1.5",
+    "express-validator": "^7.0.1",
+    "express-ws": "^5.0.2",
+    "helmet": "^7.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.0.3",
+    "multer": "^1.4.5-lts.1",
+    "node-pty": "^1.0.0",
+    "openai": "^4.104.0",
+    "ws": "^8.14.2",
+    "xss-clean": "^0.1.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  }
+}

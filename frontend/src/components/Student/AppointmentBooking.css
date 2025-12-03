@@ -1,0 +1,247 @@
+.appointment-booking {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.appointment-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 3px solid #C8102E;
+}
+
+.appointment-header h2 {
+  color: #C8102E;
+  margin: 0;
+}
+
+.btn-book-appointment {
+  background: linear-gradient(135deg, #C8102E 0%, #8B1538 100%);
+  color: white;
+  border: none;
+  padding: 0.875rem 1.5rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-book-appointment:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(200, 16, 46, 0.3);
+}
+
+.appointment-error {
+  background: #fee;
+  color: #c33;
+  padding: 1rem;
+  border-radius: 8px;
+  border: 2px solid #fcc;
+  margin-bottom: 1.5rem;
+}
+
+.booking-form-container {
+  background: #f8f9fa;
+  border: 2px solid #C8102E;
+  border-radius: 12px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+.booking-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-group label {
+  color: #333;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  padding: 0.75rem 1rem;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-family: inherit;
+  transition: all 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #C8102E;
+  box-shadow: 0 0 0 3px rgba(200, 16, 46, 0.1);
+}
+
+.question-input-group {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.question-input-group input {
+  flex: 1;
+}
+
+.remove-question-btn {
+  background: #dc3545;
+  color: white;
+  border: none;
+  padding: 0.5rem 0.75rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.remove-question-btn:hover {
+  background: #c82333;
+}
+
+.add-question-btn {
+  background: transparent;
+  border: 2px dashed #C8102E;
+  color: #C8102E;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  align-self: flex-start;
+}
+
+.add-question-btn:hover {
+  background: #C8102E;
+  color: white;
+}
+
+.submit-booking-btn {
+  background: linear-gradient(135deg, #C8102E 0%, #8B1538 100%);
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.submit-booking-btn:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(200, 16, 46, 0.3);
+}
+
+.submit-booking-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.appointments-list h3 {
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+
+.empty-appointments {
+  text-align: center;
+  padding: 3rem;
+  background: #f8f9fa;
+  border-radius: 12px;
+  color: #666;
+}
+
+.empty-appointments .hint {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  color: #999;
+}
+
+.appointments-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 1.5rem;
+}
+
+.appointment-card {
+  background: white;
+  border: 2px solid #e0e0e0;
+  border-radius: 12px;
+  padding: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.appointment-card:hover {
+  border-color: #C8102E;
+  box-shadow: 0 4px 16px rgba(200, 16, 46, 0.1);
+}
+
+.appointment-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.tutor-name {
+  color: #666;
+  font-size: 0.9rem;
+  margin: 0.25rem 0 0;
+}
+
+.status-badge {
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.appointment-card-body {
+  color: #666;
+  line-height: 1.8;
+}
+
+.appointment-card-body p {
+  margin: 0.5rem 0;
+}
+
+.questions-section {
+  margin-top: 1rem;
+  padding: 1rem;
+  background: #f8f9fa;
+  border-radius: 6px;
+}
+
+.questions-section ul {
+  margin: 0.5rem 0 0;
+  padding-left: 1.5rem;
+}
+
+.questions-section li {
+  margin: 0.5rem 0;
+}
+
+
+
+
+

@@ -1,0 +1,123 @@
+.tutor-login-container {
+  width: 100%;
+  max-width: 450px;
+  margin: 0 auto;
+  padding: 2rem;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+.tutor-login-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.tutor-login-header h2 {
+  color: #C8102E;
+  margin: 1rem 0 0.5rem;
+  font-size: 1.75rem;
+}
+
+.tutor-login-header p {
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+.back-to-student-login {
+  background: transparent;
+  border: 1px solid #C8102E;
+  color: #C8102E;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+  margin-top: 0.5rem;
+}
+
+.back-to-student-login:hover {
+  background: #C8102E;
+  color: white;
+}
+
+.tutor-login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-group label {
+  color: #333;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.form-group input {
+  padding: 0.75rem 1rem;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: #C8102E;
+  box-shadow: 0 0 0 3px rgba(200, 16, 46, 0.1);
+}
+
+.tutor-login-error {
+  background: #fee;
+  color: #c33;
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  border: 1px solid #fcc;
+  font-size: 0.9rem;
+}
+
+.tutor-login-btn {
+  background: linear-gradient(135deg, #C8102E 0%, #8B1538 100%);
+  color: white;
+  border: none;
+  padding: 0.875rem 1.5rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.tutor-login-btn:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(200, 16, 46, 0.3);
+}
+
+.tutor-login-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.tutor-login-info {
+  margin-top: 2rem;
+  text-align: center;
+  color: #666;
+  font-size: 0.85rem;
+}
+
+.tutor-login-info .info-text {
+  margin-top: 0.5rem;
+  font-size: 0.8rem;
+  color: #999;
+}
+
+
+
+
+

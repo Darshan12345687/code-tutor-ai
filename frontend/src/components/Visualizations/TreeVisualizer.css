@@ -1,0 +1,44 @@
+.tree-viz {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.tree-canvas {
+  width: 100%;
+  height: 600px;
+  border-radius: 8px;
+  background: white;
+}
+
+.traversal-controls {
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.traversal-controls h4 {
+  margin: 0 0 15px 0;
+  color: #333;
+}
+
+.traversal-buttons {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.traversal-result {
+  background: white;
+  padding: 15px;
+  border-radius: 8px;
+  border-left: 4px solid #28a745;
+  color: #333;
+  font-size: 14px;
+}
+
+
+
+
+
+

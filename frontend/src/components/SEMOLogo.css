@@ -1,0 +1,105 @@
+.semo-logo-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.semo-logo-image {
+  height: auto;
+  width: auto;
+  object-fit: contain;
+  max-width: 100%;
+}
+
+/* Size variants */
+.semo-logo-wrapper.small .semo-logo-image {
+  max-height: 50px;
+}
+
+.semo-logo-wrapper.medium .semo-logo-image {
+  max-height: 70px;
+}
+
+.semo-logo-wrapper.large .semo-logo-image {
+  max-height: 100px;
+}
+
+/* Official SEMO Logo Design */
+.semo-logo-official {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 8px 0;
+}
+
+.semo-logo-building {
+  font-size: 48px;
+  color: #D4AF37;
+  line-height: 1;
+  flex-shrink: 0;
+  filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.2));
+  margin-right: 2px;
+}
+
+.semo-logo-text-container {
+  display: inline-flex;
+  flex-direction: row;
+  align-items: baseline;
+  gap: 0;
+  white-space: nowrap;
+}
+
+.semo-logo-primary {
+  font-size: 15px;
+  font-weight: 600;
+  color: #C8102E;
+  letter-spacing: 0.2px;
+  line-height: 1.4;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+}
+
+.semo-logo-secondary {
+  font-size: 15px;
+  font-weight: 600;
+  color: #C8102E;
+  letter-spacing: 0.2px;
+  line-height: 1.4;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+}
+
+/* Size variants for text logo */
+.semo-logo-text.small .semo-logo-icon {
+  font-size: 35px;
+}
+
+.semo-logo-text.small .semo-logo-primary {
+  font-size: 14px;
+}
+
+.semo-logo-text.small .semo-logo-secondary {
+  font-size: 10px;
+}
+
+.semo-logo-text.medium .semo-logo-icon {
+  font-size: 50px;
+}
+
+.semo-logo-text.medium .semo-logo-primary {
+  font-size: 18px;
+}
+
+.semo-logo-text.medium .semo-logo-secondary {
+  font-size: 13px;
+}
+
+.semo-logo-text.large .semo-logo-icon {
+  font-size: 65px;
+}
+
+.semo-logo-text.large .semo-logo-primary {
+  font-size: 22px;
+}
+
+.semo-logo-text.large .semo-logo-secondary {
+  font-size: 15px;
+}
+

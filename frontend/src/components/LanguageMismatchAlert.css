@@ -1,0 +1,134 @@
+.language-mismatch-alert {
+  background: linear-gradient(135deg, #fff3cd 0%, #ffe69c 100%);
+  border: 2px solid #ffc107;
+  border-left: 5px solid #C8102E;
+  border-radius: 12px;
+  padding: 16px 20px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  box-shadow: 0 4px 12px rgba(255, 193, 7, 0.3);
+  animation: slideDown 0.3s ease-out;
+  position: relative;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.alert-icon {
+  font-size: 28px;
+  flex-shrink: 0;
+  animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+.alert-content {
+  flex: 1;
+}
+
+.alert-content strong {
+  display: block;
+  color: #856404;
+  font-size: 16px;
+  margin-bottom: 8px;
+  font-weight: 700;
+}
+
+.alert-content p {
+  margin: 0 0 12px 0;
+  color: #856404;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.alert-content strong {
+  color: #C8102E;
+}
+
+.alert-actions {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.btn-switch {
+  background: linear-gradient(135deg, #C8102E 0%, #8B1538 100%);
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-switch:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(200, 16, 46, 0.4);
+}
+
+.btn-dismiss {
+  background: white;
+  color: #856404;
+  border: 2px solid #ffc107;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-dismiss:hover {
+  background: #ffc107;
+  color: white;
+  transform: translateY(-2px);
+}
+
+.alert-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: transparent;
+  border: none;
+  color: #856404;
+  font-size: 24px;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.alert-close:hover {
+  background: rgba(200, 16, 46, 0.1);
+  color: #C8102E;
+  transform: rotate(90deg);
+}
+
+
+
+
+
+

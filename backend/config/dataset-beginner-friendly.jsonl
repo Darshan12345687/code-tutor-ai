@@ -1,0 +1,95 @@
+{"input": "Explain variables in Python.", "output": "A variable is like a labeled box where you store something. In Python: x = 5 means you put 5 into box x."}
+{"input": "Explain loops with analogy.", "output": "A loop is like checking each item on your grocery list one by one. Code repeats until done."}
+{"input": "Explain functions to a beginner.", "output": "A function is like a vending machine: you give input, it performs work, you get output."}
+{"input": "Fix this Python error: print('Age: ' + 20)", "output": "You can't combine string and number. Convert using str(20) or use f'Age: {20}'."}
+{"input": "Explain Java classes simply.", "output": "A class is a blueprint for creating objects—like a recipe for cookies."}
+{"input": "Explain inheritance with analogy.", "output": "Inheritance is like a child inheriting traits from parents. A class gets properties from another class."}
+{"input": "What is an array?", "output": "An array is like a row of lockers—each has a fixed position and holds one item."}
+{"input": "What is an API?", "output": "An API is like a waiter: it takes your request to the kitchen (server) and brings food (data)."}
+{"input": "Explain SQL SELECT.", "output": "SELECT is like choosing specific items from a shelf. SELECT name FROM students picks only the names."}
+{"input": "Explain Unity Update function.", "output": "Update is like a heartbeat—runs every frame and keeps checking game logic."}
+{"input": "Explain C# variables with analogy.", "output": "Variables are storage containers. In C#: int age = 20; stores 20 in 'age'."}
+{"input": "Explain Python dictionaries.", "output": "A dict is like a real dictionary: look up a word (key) to get a meaning (value)."}
+{"input": "Explain Java ArrayList simply.", "output": "ArrayList is like a backpack that expands automatically when you add items."}
+{"input": "Fix this error: int x = 'hello';", "output": "You can't assign a string to an int. Use int x = 5; or change type to String."}
+{"input": "Explain OOP encapsulation.", "output": "Encapsulation is like locking valuables in a box so only you have the key—controls data access."}
+{"input": "Explain polymorphism simply.", "output": "Polymorphism is like pressing a 'start' button on different machines—they behave differently."}
+{"input": "Explain Git commit.", "output": "A commit is like taking a snapshot of your project at a moment in time."}
+{"input": "Explain Git branching.", "output": "A branch is like a parallel universe where you make changes without affecting the main world."}
+{"input": "Explain time complexity easily.", "output": "Time complexity measures how slow things get as data grows—like more people in a line."}
+{"input": "Explain Big O of O(n).", "output": "O(n) means time grows proportionally with input—like checking each paper in a stack."}
+{"input": "Explain stacks simply.", "output": "A stack is a pile of plates. You add/remove from the top (LIFO)."}
+{"input": "Explain queues simply.", "output": "A queue is like a line at the bank (FIFO). First in, first out."}
+{"input": "Explain recursion simply.", "output": "Recursion is like standing between two mirrors—process repeats inside itself."}
+{"input": "Debug: list = [1,2,3]; print(list[3])", "output": "Index 3 doesn't exist. Use list[2] or ensure index is valid."}
+{"input": "Explain try/catch Java.", "output": "Try/catch is like wearing a helmet. If something dangerous happens, you're protected."}
+{"input": "Explain Python exceptions.", "output": "Exceptions are runtime errors. You can catch them using try/except to prevent crashes."}
+{"input": "Explain hashing simply.", "output": "Hashing is like turning a word into a unique locker number for quick access."}
+{"input": "Explain LinkedList simply.", "output": "A LinkedList is like a treasure map: each node points to the next location."}
+{"input": "Explain HTTP request.", "output": "An HTTP request is like sending a mail letter asking for information."}
+{"input": "Explain REST API.", "output": "REST is like a restaurant menu: standard ways to order and receive data."}
+{"input": "Explain JavaScript variables.", "output": "JS variables are containers. let age = 20 stores 20 in age."}
+{"input": "Explain const in JS.", "output": "const is like super-glue—you cannot change the variable once set."}
+{"input": "Explain loops in JavaScript.", "output": "JS loops repeat tasks like checking each box in a row."}
+{"input": "Fix JS error: console.log(name); let name='A';", "output": "Variable used before declared. Move console.log below the declaration."}
+{"input": "Explain callbacks.", "output": "A callback is like leaving your number so someone calls when they finish a task."}
+{"input": "Explain promises simply.", "output": "A promise is like ordering food delivery—you wait for it to complete later."}
+{"input": "Explain async/await.", "output": "async/await is waiting politely for something to finish before continuing."}
+{"input": "Explain JSON simply.", "output": "JSON is like a digital form that stores key-value pairs."}
+{"input": "Explain frontend vs backend.", "output": "Frontend is what users see. Backend is the kitchen doing the work."}
+{"input": "Explain DOM.", "output": "DOM is like a family tree of webpage elements."}
+{"input": "Explain Unity Rigidbody.", "output": "Rigidbody adds physics—like giving your object real-world weight."}
+{"input": "Explain Unity collisions.", "output": "Collisions are like two objects bumping in real life; colliders detect contact."}
+{"input": "Fix: NullReferenceException in Unity.", "output": "Means you are trying to use something that hasn't been assigned yet."}
+{"input": "Explain transform.position.", "output": "It's like GPS coordinates of an object in your scene."}
+{"input": "Explain Update vs FixedUpdate.", "output": "Update is frame-based. FixedUpdate is physics-based at fixed intervals."}
+{"input": "Explain coroutines.", "output": "Coroutines are like pauses in your code without stopping everything else."}
+{"input": "Explain DeltaTime.", "output": "DeltaTime is the time between frames—helps smooth movement."}
+{"input": "Explain prefabs.", "output": "Prefabs are templates for reusable objects—like cookie cutters."}
+{"input": "Explain SerializeField.", "output": "It shows private variables in Inspector—like making hidden storage visible."}
+{"input": "Explain scene loading.", "output": "Loading scenes is like switching rooms in a building."}
+{"input": "Explain MySQL tables.", "output": "A table is a grid of data like a spreadsheet."}
+{"input": "Explain primary keys.", "output": "A primary key is like a unique student ID number."}
+{"input": "Explain foreign keys.", "output": "Foreign keys are like linking student ID to course records."}
+{"input": "Explain SQL JOIN.", "output": "JOIN is merging information like combining name list with grade list."}
+{"input": "Explain WHERE clause.", "output": "WHERE filters results—like searching for only students older than 20."}
+{"input": "Explain ORDER BY.", "output": "ORDER BY is sorting results like arranging books alphabetically."}
+{"input": "Explain INSERT.", "output": "INSERT adds new rows—like adding a new entry to a logbook."}
+{"input": "Explain DELETE.", "output": "DELETE removes rows—like erasing a line from a notebook."}
+{"input": "Explain UPDATE.", "output": "UPDATE modifies existing data—like correcting a misspelled name."}
+{"input": "Explain SQL injection.", "output": "SQL injection is like letting someone rewrite your entire database form—dangerous."}
+{"input": "Explain machine learning simply.", "output": "ML is teaching computers using examples instead of instructions."}
+{"input": "Explain dataset in ML.", "output": "Dataset is a collection of examples the model learns from."}
+{"input": "Explain training vs testing.", "output": "Training is learning. Testing checks performance on new examples."}
+{"input": "Explain overfitting.", "output": "Overfitting is like memorizing the answer key instead of learning concepts."}
+{"input": "Explain neural networks simply.", "output": "A neural network is like a network of neurons passing signals."}
+{"input": "Explain activation function.", "output": "Activation function is like a decision switch—should this neuron fire?"}
+{"input": "Explain gradient descent.", "output": "Gradient descent is like walking downhill to find the lowest valley."}
+{"input": "Explain epochs.", "output": "One epoch is one full pass through the dataset."}
+{"input": "Explain classification vs regression.", "output": "Classification picks categories. Regression predicts numbers."}
+{"input": "Explain overfitting prevention.", "output": "Use dropout, regularization, or more data to prevent memorizing."}
+{"input": "Explain enums simply.", "output": "Enums are like predefined labels—Monday, Tuesday, etc."}
+{"input": "Explain switch statements.", "output": "Switch is like a multi-lane road directing traffic based on value."}
+{"input": "Explain boolean logic.", "output": "Boolean logic is true/false decisions like yes/no choices."}
+{"input": "Explain AND/OR operators.", "output": "AND means both must be true. OR means at least one is true."}
+{"input": "Explain pointers simply.", "output": "A pointer is like a house address pointing to where data lives."}
+{"input": "Explain pass by value.", "output": "Pass by value gives a copy—like photocopying a document."}
+{"input": "Explain pass by reference.", "output": "Pass by reference gives directions to the original document."}
+{"input": "Explain memory stack vs heap.", "output": "Stack is organized like plates. Heap is like a messy attic with dynamic allocation."}
+{"input": "Explain file I/O.", "output": "File I/O is reading and writing files like opening and saving documents."}
+{"input": "Explain threading simply.", "output": "Threads are like multiple workers doing tasks simultaneously."}
+{"input": "Explain APIs using a restaurant analogy.", "output": "API = waiter, server = kitchen, response = food served."}
+{"input": "Explain GET request.", "output": "GET means 'give me information'—like asking for the menu."}
+{"input": "Explain POST request.", "output": "POST sends new data—like filling a form and submitting it."}
+{"input": "Explain cookies.", "output": "Cookies are small memory notes websites store on your browser."}
+{"input": "Explain sessions.", "output": "Session is a temporary record of who you are while browsing."}
+{"input": "Explain token authentication.", "output": "Token is like a digital entry pass for secure access."}
+{"input": "Explain rate limiting.", "output": "Rate limiting is like allowing only a certain number of requests per minute."}
+{"input": "Explain WebSockets.", "output": "WebSockets provide live communication—like a phone call instead of letters."}
+{"input": "Explain cloud storage.", "output": "Cloud storage is like renting space in someone else's big computer."}
+{"input": "Explain serverless.", "output": "Serverless means you don't manage servers—like renting a chef instead of a kitchen."}
+
+
+
+
+

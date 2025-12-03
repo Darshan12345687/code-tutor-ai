@@ -1,0 +1,232 @@
+.header {
+  background: #ffffff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-bottom: 3px solid #C8102E;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.header-top-bar {
+  background: #C8102E;
+  padding: 8px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.header-top-content {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.semo-official-links {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.semo-link {
+  color: rgba(255, 255, 255, 0.95);
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.semo-link:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.divider {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 12px;
+}
+
+.user-menu-top {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.user-name {
+  color: rgba(255, 255, 255, 0.95);
+  font-weight: 500;
+  font-size: 13px;
+}
+
+.logout-btn {
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: white;
+  padding: 6px 14px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.logout-btn:hover {
+  background: rgba(255, 255, 255, 0.3);
+  transform: translateY(-1px);
+}
+
+.header-main {
+  background: #ffffff;
+  padding: 20px 40px;
+}
+
+.header-content {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-content {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.user-menu {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.user-name {
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.logout-btn {
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: white;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.logout-btn:hover {
+  background: rgba(255, 255, 255, 0.3);
+  transform: translateY(-2px);
+}
+
+.logo-section {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex: 1;
+}
+
+.semo-logo {
+  height: 70px;
+  width: auto;
+  object-fit: contain;
+  max-width: 300px;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
+}
+
+.logo-fallback {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 8px 0;
+}
+
+.logo-icon-fallback {
+  font-size: 50px;
+  color: #C8102E;
+  line-height: 1;
+}
+
+.logo-text-fallback {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.logo-text-primary {
+  font-size: 18px;
+  font-weight: 700;
+  color: #C8102E;
+  letter-spacing: 0.5px;
+  line-height: 1.2;
+}
+
+.logo-text-secondary {
+  font-size: 13px;
+  font-weight: 400;
+  color: #333;
+  letter-spacing: 0.3px;
+  line-height: 1.2;
+}
+
+.logo-text {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.main-title {
+  color: #C8102E;
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0;
+  letter-spacing: -0.5px;
+}
+
+.subtitle {
+  color: #666;
+  font-size: 14px;
+  font-weight: 400;
+  margin: 0;
+  font-style: italic;
+}
+
+@media (max-width: 768px) {
+  .header-top-content {
+    padding: 0 20px;
+    flex-direction: column;
+    gap: 8px;
+    align-items: flex-start;
+  }
+  
+  .header-main {
+    padding: 15px 20px;
+  }
+  
+  .logo-section {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+  
+  .semo-logo {
+    height: 45px;
+  }
+  
+  .main-title {
+    font-size: 20px;
+  }
+  
+  .subtitle {
+    font-size: 12px;
+  }
+}
+
