@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import { getApiUrl, API_ENDPOINTS } from '../../utils/apiConfig';
 import './AppointmentBooking.css';
 
 interface Appointment {
@@ -36,7 +37,7 @@ const AppointmentBooking: React.FC = () => {
   const fetchAppointments = async () => {
     try {
       const token = localStorage.getItem('token');
-      const response = await axios.get('http://localhost:8000/api/appointments', {
+      const response = await axios.get(getApiUrl(API_ENDPOINTS.APPOINTMENTS.LIST), {
         headers: { Authorization: `Bearer ${token}` }
       });
       
@@ -142,7 +143,7 @@ const AppointmentBooking: React.FC = () => {
       const questions = formData.questions.filter(q => q.trim() !== '');
       
       await axios.post(
-        'http://localhost:8000/api/appointments',
+        getApiUrl(API_ENDPOINTS.APPOINTMENTS.CREATE),
         {
           appointmentDate: formData.appointmentDate,
           duration: formData.duration,

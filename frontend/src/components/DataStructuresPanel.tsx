@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { getApiUrl, API_ENDPOINTS } from '../utils/apiConfig';
 import './DataStructuresPanel.css';
 
 interface DataStructure {
@@ -42,7 +43,7 @@ const DataStructuresPanel: React.FC = () => {
 
   const fetchDataStructures = async () => {
     try {
-      const response = await fetch('http://localhost:8000/api/data-structures');
+      const response = await fetch(getApiUrl(API_ENDPOINTS.DATA_STRUCTURES.LIST));
       const data = await response.json();
       setDataStructures(data.data_structures);
     } catch (error) {
@@ -53,7 +54,7 @@ const DataStructuresPanel: React.FC = () => {
   const fetchDSDetail = async (dsId: string) => {
     setLoading(true);
     try {
-      const response = await fetch(`http://localhost:8000/api/data-structures/${dsId}`);
+      const response = await fetch(getApiUrl(API_ENDPOINTS.DATA_STRUCTURES.DETAIL(dsId)));
       const data = await response.json();
       setDsDetail(data);
     } catch (error) {

@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import { getApiUrl, API_ENDPOINTS } from '../../utils/apiConfig';
 import './QuizPanel.css';
 
 interface Quiz {
@@ -71,7 +72,7 @@ const QuizPanel: React.FC = () => {
   const fetchQuizzes = async () => {
     try {
       setLoading(true);
-      const response = await axios.get('http://localhost:8000/api/quizzes', {
+      const response = await axios.get(getApiUrl(API_ENDPOINTS.QUIZZES.LIST), {
         headers: token ? { Authorization: `Bearer ${token}` } : {}
       });
       setQuizzes(response.data.quizzes || []);
@@ -85,7 +86,7 @@ const QuizPanel: React.FC = () => {
   const fetchQuizProgress = async () => {
     if (!token) return;
     try {
-      const response = await axios.get('http://localhost:8000/api/quizzes/user/progress', {
+      const response = await axios.get(getApiUrl(API_ENDPOINTS.QUIZZES.USER_PROGRESS), {
         headers: { Authorization: `Bearer ${token}` }
       });
       setUserProgress(response.data);
@@ -97,7 +98,7 @@ const QuizPanel: React.FC = () => {
   const fetchFlashcards = async () => {
     try {
       setLoading(true);
-      const response = await axios.get('http://localhost:8000/api/flashcards', {
+      const response = await axios.get(getApiUrl(API_ENDPOINTS.FLASHCARDS.LIST), {
         headers: token ? { Authorization: `Bearer ${token}` } : {}
       });
       setFlashcards(response.data.flashcards || []);
@@ -114,7 +115,7 @@ const QuizPanel: React.FC = () => {
   const fetchFlashcardProgress = async () => {
     if (!token) return;
     try {
-      const response = await axios.get('http://localhost:8000/api/flashcards/user/progress', {
+      const response = await axios.get(getApiUrl(API_ENDPOINTS.FLASHCARDS.USER_PROGRESS), {
         headers: { Authorization: `Bearer ${token}` }
       });
       setUserProgress(response.data);
@@ -161,7 +162,7 @@ const QuizPanel: React.FC = () => {
     try {
       setLoading(true);
       const response = await axios.post(
-        `http://localhost:8000/api/quizzes/${selectedQuiz._id}/submit`,
+        getApiUrl(API_ENDPOINTS.QUIZZES.SUBMIT(selectedQuiz._id)),
         {
           answers,
           timeSpent
@@ -193,7 +194,7 @@ const QuizPanel: React.FC = () => {
 
     try {
       await axios.post(
-        `http://localhost:8000/api/flashcards/${currentFlashcard._id}/review`,
+        getApiUrl(API_ENDPOINTS.FLASHCARDS.REVIEW(currentFlashcard._id)),
         { quality },
         {
           headers: { Authorization: `Bearer ${token}` }
